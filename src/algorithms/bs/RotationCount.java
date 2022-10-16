@@ -1,4 +1,4 @@
-package algorithms.searching;
+package algorithms.bs;
 
 // rotation count of a sorted rotated array
 public class RotationCount {

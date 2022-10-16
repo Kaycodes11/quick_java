@@ -1,4 +1,4 @@
-package algorithms.searching;
+package algorithms.bs;
 
 //https://leetcode.com/problems/search-in-rotated-sorted-array/
 

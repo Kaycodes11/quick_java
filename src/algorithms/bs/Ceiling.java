@@ -1,4 +1,4 @@
-package algorithms.searching;
+package algorithms.bs;
 
 public class Ceiling {
 

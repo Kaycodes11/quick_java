@@ -1,4 +1,4 @@
-package algorithms.searching;
+package algorithms.bs;
 
 public class FirstAndLastPosition {
     public static void main(String[] args) {

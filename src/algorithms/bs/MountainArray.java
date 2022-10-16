@@ -1,4 +1,4 @@
-package algorithms.searching;
+package algorithms.bs;
 
 //https://leetcode.com/problems/peak-index-in-a-mountain-array/
 public class MountainArray {
