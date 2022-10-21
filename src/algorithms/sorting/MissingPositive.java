@@ -1,31 +1,31 @@
 package algorithms.sorting;
 
-import java.util.Arrays;
-
-// pattern is = cyclic sort
-public class SetMismatch {
+public class MissingPositive {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 2, 4};
-        System.out.println(Arrays.toString(findErrorNums(nums)));
+        int[] arr = {3, 4, -1, 1}; // int[] arr = {1, 2, 0};
+        System.out.println(missingNumber(arr));
     }
 
-    static int[] findErrorNums(int[] arr) {
+    static int missingNumber(int[] arr) {
         int i = 0;
+
         while (i < arr.length) {
             int correct = arr[i] - 1;
-            if(arr[i] != arr[correct]) {
+            if (arr[i] > 0 && arr[i] <= arr.length && arr[i] != arr[correct]) {
                 swap(arr, i, correct);
             } else {
                 i++;
             }
         }
-        // search for the mission number
+
+        // search for the missing number
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] != index + 1) {
-                return new int[] {arr[index], index + 1};
-            };
+                return index + 1;
+            }
         }
-        return new int[]{-1, -1};
+
+        return arr.length + 1;
     }
 
     private static void swap(int[] arr, int first, int second) {
