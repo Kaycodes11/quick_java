@@ -1,3 +1,5 @@
+Learning dsa: don't understand the written code rather understand logic behind it so that it can be explained and written in any language
+
 understanding problem
 
 recognize the main pattern e.g. array, string, ls, bs etc.
