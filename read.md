@@ -1,21 +1,19 @@
-Learning dsa: don't understand the written code rather understand logic behind it so that it can be explained and written in any language
+# The key Data Structures
+array vs linked-list vs tree vs hashmap
 
-understanding problem
+# Learning data structures and algorithms: 
+To understand the code, understand the logic behind it first & foremost.
 
-recognize the main pattern e.g. array, string, ls, bs etc.
+N.B: use recursion, when the answer exists within the subsection of given input
 
-how many cases occur by using the recognized pattern?
+# build problem & solving approach
 
-e.g. bs so mainly it has these cases:
-
-case 1 : mid == target then done 
-
-case 2 : mid < target then start = mid + 1
-
-case 3 : mid > target then end = end - 1
-
-case 4 : return -1 
+1. first visualize (if necessary) then solve it with pseudocode on pen-paper
+2. now, having understanding on the pseudocode/steps from the previous step
+3. figure out what's needed to solve each step from these? (variable, fn, if, loop)
+4. overall cases, or cases from any steps like what if given input is null, or has length 1
 
 
-Medium, hard problems are build on top of easy problem
-if "understood question and recognized pattern" then good.
+
+
+
