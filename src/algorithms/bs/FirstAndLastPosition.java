@@ -1,14 +1,19 @@
 package algorithms.bs;
 
+import java.util.Arrays;
+
 public class FirstAndLastPosition {
     public static void main(String[] args) {
-        int[] arr = {5, 7, 7, 8, 8, 10};
+        int[] arr = {5, 7, 7, 7}; // int[] arr = {5, 7, 7, 8, 7, 8, 10};
+        System.out.println(Arrays.toString(searchRange(arr, 7)));
     }
 
-    public int[] searchRange(int[] nums, int target) {
+    // given an array of integers; return first and second occurrences in an array
+    static public int[] searchRange(int[] nums, int target) {
         int[] ans = {-1, -1};
         // check for the first occurrence of the target
         ans[0] = search(nums, target, true);
+        // check for the second occurrence of the target
         if (ans[0] != -1) {
             ans[1] = search(nums, target, false);
         }
@@ -16,7 +21,7 @@ public class FirstAndLastPosition {
     }
 
     // this function just returns the index value of target
-    int search(int[] nums, int target, boolean findStartIndex) {
+    static int search(int[] nums, int target, boolean findStartIndex) {
         int ans = -1;
         int start = 0;
         int end = nums.length - 1;

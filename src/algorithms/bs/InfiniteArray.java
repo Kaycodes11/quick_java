@@ -3,7 +3,7 @@ package algorithms.bs;
 public class InfiniteArray {
     public static void main(String[] args) {
         int[] arr = {3, 5, 7, 9, 10, 90, 100, 120, 140, 150, 180};
-        System.out.println(ans(arr, 5));
+        System.out.println(ans(arr, 10));
     }
 
     // find position of the element from a sorted infinite array
@@ -18,11 +18,7 @@ public class InfiniteArray {
         while (target > arr[end]) {
             int temp = end + 1; // newStart
             // double the box value
-            // end =  previous end + size of the box * 2; why used end - start + 1 explained 1:52:50
-            // finding size of an array by indices int[] arr = {2, 4, 5, 6, 7, 8, 9, 10}; find the size of box from 5-7
-            // box 5-7; start index 2 & end index 4, length will be after subtracting the element before s as s-1
-            // e = 4 s = 2 =  2; so e - s - 1 => e - s + 1 = 3, 4 - 4 + 1 = 1
-            end = end + (end - start + 1) * 2;
+            end = end + (end - start + 1) * 2; // 1 + (( 1 - 0 + 1) * 2) = 5
             start = temp;
         }
         return binarySearch(arr, target, start, end);
